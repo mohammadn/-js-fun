@@ -1,93 +1,118 @@
 body{
 	background-image:url('images/background.png');
-	border:1px solid black;
 }
 div.container{
-	width:900px;
-	height:600px;
-	margin:70px auto;
+	width:1050px;
+	height:695px;
+	margin:20px auto;
 }
-@-webkit-keyframes icon1{
-	50% {
-		-webkit-transform:rotate(5deg);	
-	}
-	100% {
-		-webkit-transform:rotate(-5deg);
-	}
-	
+div.container p{
+	font-size:20px;
+	font-family:"Comic Sans MS", cursive;
+	margin-left:10px;
+	margin-top:-100px;
 }
 div.icon{
-	text-align:center;
-	font-family:"Comic Sans MS", cursive;
 	cursor:pointer;
-	color:black;
-	text-decoration:none;
+	float:left;
+	overflow:hidden;
 	position:absolute;
 	-webkit-transition:all 500ms;
-	-webkit-animation-name:icon1;
-	-webkit-animation-duration:250ms;
-	-webkit-animation-iteration-count:infinite;
-	-webkit-animation-direction:alternate;
-	-webkit-animation-timing-function:ease-in-out;
-	border:1px dashed black;
+	border:1px solid black;
 	-webkit-box-shadow:1px 1px 5px 1px black;
 }
-div.icon:hover{
-	color:white;
-	-webkit-animation-play-state:paused;
-	background-color:rgba(150,150,150,0.3) !important;
-	background-image:url(../desktop/evil_apple-2560x1600.jpg);
-	background-size:cover;
+div.icon1{
+	width:510px;
+	height:280px;
+	background-color:rgba(154,205,52,0.8);
+	float:left;
+	background-image:url(images/home.png);
 	background-position:center center;
 	background-repeat:no-repeat;
 }
-div.icon1{
-	width:70px;
-	height:70px;
-	font-size:20px;
-	background-color:rgba(0,122,255,0.8);
-	line-height:70px;
-	-webkit-border-radius:10px;
-	margin-left:380px;
-	margin-top:40px;
-}
 div.icon2{
-	width:135px;
-	height:135px;
-	font-size:30px;
-	background-color:rgba(255,7,40,0.8);
-	line-height:135px;
-	-webkit-border-radius:25px;
-	margin-left:50px;
-	margin-top:200px;
+	width:530px;
+	height:150px;
+	float:left;
+	background-color:rgba(0,96,45,0.8);
+	background-image:url(images/blog.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	margin-left:520px;
 }
 div.icon3{
-	width:80px;
-	height:80px;
-	font-size:30px;
-	background-color:rgba(255,218,33,0.8);
-	line-height:80px;
-	-webkit-border-radius:15px;
-	margin-left:260px;
-	margin-top:470px;
-}
-div.icon4{
-	width:150px;
-	height:150px;
-	font-size:30px;
-	background-color:rgba(122,0,151,0.8);
-	line-height:150px;
-	-webkit-border-radius:20px;
-	margin-left:750px;
-	margin-top:130px;
-}
-div.icon5{
 	width:120px;
 	height:120px;
-	font-size:20px;
-	background-color:rgba(46,139,87,0.8);
-	line-height:120px;
-	-webkit-border-radius:30px;
-	margin-left:570px;
-	margin-top:380px;
+	background-color:rgba(254,0,0,0.8);
+	margin-top:160px;
+	position:absolute;
+	margin-left:520px;
+	float:left;
+	border:1px solid black;
+	-webkit-box-shadow:1px 1px 5px 1px black;
+}
+div.icon4{
+	width:400px;
+	height:310px;
+	background-color:rgba(254,203,2,0.8);
+	background-image:url(images/work.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	margin-left:650px;
+	margin-top:160px;
+}
+div.icon5{
+	width:180px;
+	height:180px;
+	background-color:rgba(0,0,102,0.8);
+	margin-top:290px;
+	position:absolute;
+	float:left;
+	border:1px solid black;
+	-webkit-box-shadow:1px 1px 5px 1px black;
+
+}
+div.icon6{
+	width:450px;
+	height:180px;
+	background-color:rgba(0,200,252,0.8);
+	background-image:url(images/information.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	margin-left:190px;
+	margin-top:290px;
+}
+div.icon7{
+	width:520px;
+	height:210px;
+	background-color:rgba(255,101,1,0.8);
+	background-image:url(images/contact.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	margin-top:480px;
+}
+div.icon8{
+	width:300px;
+	height:210px;
+	background-color:rgba(150,0,151,0.8);
+	background-image:url(images/logo.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	margin-left:530px;
+	position:absolute;
+	margin-top:480px;
+	float:left;
+	border:1px solid black;
+	-webkit-box-shadow:1px 1px 5px 1px black;
+}
+div.icon9{
+	width:210px;
+	height:210px;
+	background-color:rgba(247,95,146,0.8);
+	margin-left:840px;
+	position:absolute;
+	margin-top:480px;
+	float:left;
+	border:1px solid black;
+	-webkit-box-shadow:1px 1px 5px 1px black;
 }
