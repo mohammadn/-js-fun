@@ -6,12 +6,6 @@ div.container{
 	height:695px;
 	margin:20px auto;
 }
-div.container p{
-	font-size:20px;
-	font-family:"Comic Sans MS", cursive;
-	margin-left:10px;
-	margin-top:-100px;
-}
 div.icon{
 	cursor:pointer;
 	float:left;
@@ -26,7 +20,7 @@ div.icon1{
 	height:280px;
 	background-color:rgba(154,205,52,0.8);
 	float:left;
-	background-image:url(images/home.png);
+	background-image:url('images/home.png');
 	background-position:center center;
 	background-repeat:no-repeat;
 }
@@ -35,7 +29,7 @@ div.icon2{
 	height:150px;
 	float:left;
 	background-color:rgba(0,96,45,0.8);
-	background-image:url(images/blog.png);
+	background-image:url('images/blog.png');
 	background-repeat:no-repeat;
 	background-position:center center;
 	margin-left:520px;
@@ -55,7 +49,7 @@ div.icon4{
 	width:400px;
 	height:310px;
 	background-color:rgba(254,203,2,0.8);
-	background-image:url(images/work.png);
+	background-image:url('images/work.png');
 	background-repeat:no-repeat;
 	background-position:center center;
 	margin-left:650px;
@@ -76,7 +70,7 @@ div.icon6{
 	width:450px;
 	height:180px;
 	background-color:rgba(0,200,252,0.8);
-	background-image:url(images/information.png);
+	background-image:url('images/information.png');
 	background-repeat:no-repeat;
 	background-position:center center;
 	margin-left:190px;
@@ -86,7 +80,7 @@ div.icon7{
 	width:520px;
 	height:210px;
 	background-color:rgba(255,101,1,0.8);
-	background-image:url(images/contact.png);
+	background-image:url('images/contact.png');
 	background-repeat:no-repeat;
 	background-position:center center;
 	margin-top:480px;
@@ -95,7 +89,7 @@ div.icon8{
 	width:300px;
 	height:210px;
 	background-color:rgba(150,0,151,0.8);
-	background-image:url(images/logo.png);
+	background-image:url('images/logo.png');
 	background-repeat:no-repeat;
 	background-position:center center;
 	margin-left:530px;
@@ -115,4 +109,10 @@ div.icon9{
 	float:left;
 	border:1px solid black;
 	-webkit-box-shadow:1px 1px 5px 1px black;
+}
+div.container p{
+	font-size:20px;
+	font-family:"Comic Sans MS", cursive;
+	margin-left:10px;
+	margin-top:-100px;
 }
