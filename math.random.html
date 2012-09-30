@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<style>
+.box{
+	width:70px;
+	height:35px;
+	left:50%;
+	top:40%;
+	position:absolute;
+	line-height:35px;
+	text-align:center;
+	-webkit-transition:all 1s;
+	-webkit-border-radius:6px;
+}
+P{	
+	text-align:center;
+	top:33%;
+	position:absolute;
+	font-size:40px;
+	width:480px;
+	height:50px;
+	line-height:50px;
+	text-align:center;
+	-webkit-transition:all 1s;
+	-webkit-border-radius:6px;
+	-webkit-animation-name:para;
+	-webkit-animation-duration:8s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:alternate;
+	-webkit-animation-timing-function:ease-in-out;
+}
+@-webkit-keyframes para{
+100%{
+	-webkit-transform:rotate(360deg);
+	left:62%;	
+	}
+}
+</style>
+</head>
+<p id="para1">AT LAST HE WILL COME</p>
+<body>
+<script type="text/javascript">
+for (i=0;i<150;i++){
+	document.write('<div class="box"></div>');
+}
+
+divs = document.getElementsByClassName('box');
+
+show = function (){
+	for (j=0;j<divs.length;j++){
+		divs.item(j).style.backgroundColor='#'+Math.round(Math.random()*1000000);
+		divs.item(j).style.height=Math.round(Math.random()*50)+'px';
+		divs.item(j).style.width=Math.round(Math.random()*50)+'px';
+		divs.item(j).style.top=Math.round(Math.random()*93)+'%';
+		divs.item(j).style.left=Math.round(Math.random()*93)+'%';
+	}
+	
+};
+setInterval(show,1000);
+</script>
+<script>
+	para = document.getElementById('para1');
+	show = function (){
+		para1.style.backgroundColor='#'+Math.round(Math.random()*1000000);
+		para1.style.color='#'+Math.round(Math.random()*1000000);
+	}
+
+setInterval(show,1000);
+</script>
+
+</body>
+</html>

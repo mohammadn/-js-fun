@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+div.btns{
+	width:70px;
+	height:35px;
+	left:50%;
+	top:40%;
+	position:absolute;
+	background-color:lightblue;
+	line-height:35px;
+	text-align:center;
+	-webkit-transition:all 500ms;
+	-webkit-border-radius:6px;
+	cursor:pointer;	
+}
+p{
+	position:absolute;
+	left:50%;
+	top:38%;
+	font-size:14px;	
+}
+</style>
+</head>
+
+<body>
+<p>Dastet hal<br/>omad?!!:D</p>
+<script type="text/javascript">
+	for(i=0;i<150;i++){
+		document.write('<div class="btns">click me</div>');
+	}
+	btns = document.getElementsByClassName('btns');
+		for(i=0;i<btns.length;i++){
+			btns.item(i).onmouseover = function(){
+				this.style.left=Math.round(Math.random()*93)+'%';
+				this.style.top=Math.round(Math.random()*93)+'%';
+				this.style.backgroundColor='#'+Math.round(Math.random()*1000)+Math.round(Math.random()*1000);
+				this.style.color='#'+Math.round(Math.random()*1000000);
+			}
+		}
+</script>
+</body>
+</html>

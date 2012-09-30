@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Untitled Document</title>
+<style type="text/css">
+div.boxs div{
+	margin-bottom:5px;
+	background-color:red;
+	height:100px;
+	width:150px;
+}
+</style>
+<script type="text/javascript" src="zepto.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('div.boxs div').click(function(){
+			$(this).animate({
+				'background-color':'#'+Math.round(Math.random()*1000000),
+				'margin-left':Math.round(Math.random()*800)+'px',
+				'margin-top':Math.round(Math.random()*600)+'px',
+				'position':'absolute',
+				'width':Math.round(Math.random()*130)+'px',
+				'height':Math.round(Math.random()*130)+'px'
+			},200);
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div class="boxs">
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+		<div></div>
+	</div>
+</body>
+</html>
